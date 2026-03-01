@@ -274,11 +274,3 @@ def farm_analytics(farmer_id):
 # ------------------- Run App -------------------
 if __name__ == '__main__':
     app.run(debug=True)
-# Replace the existing "Run App" section with this:
-if __name__ == '__main__':
-    with app.app_context():
-        # This command creates the mukulima.db file and all tables automatically
-        db.create_all()
-        print("Database 'mukulima.db' connected and initialized!")
-    
-    app.run(debug=True)
